@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>CSV Viewer</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  </style>
+  <script src="papaparse.min.js"></script>
+</head>
+<body>
+  <div class="csv-controls">
+    <label><input type="radio" name="header" value="yes" checked> First row is header</label>
+    <label><input type="radio" name="header" value="no"> No header</label>
+    <br><br>
+    <label><input type="checkbox" id="enable-filters"> Enable column filters</label>
+  </div>
+
+  <div class="drop-area" id="drop-area">
+    <p>Drag and drop your CSV file here</p>
+  </div>
+
+  <div id="table-container"></div>
+
+  <script src="viewer.js"></script>
+</body>
+</html>
