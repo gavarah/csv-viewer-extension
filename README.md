@@ -27,5 +27,3 @@ A lightweight Chrome Extension that allows you to **view `.csv` files in your br
 
 ---
 
-## 📦 File Structure
-
